@@ -17,7 +17,40 @@
       
           return true;
       
-        } else {
+        }else if (input.value.match(lista[1])) {
+      
+            alert("Benvenuto Pippo ti stavamo aspettando");
+        
+            document.form1.text1.focus();
+        
+            return true;
+        
+        }if (input.value.match(lista[2])) {
+      
+            alert("Benvenuto Zio ti stavamo aspettando");
+        
+            document.form1.text1.focus();
+        
+            return true;
+        
+        }if (input.value.match(lista[3])) {
+      
+            alert("Benvenuta Zia ti stavamo aspettando");
+        
+            document.form1.text1.focus();
+        
+            return true;
+        
+        }if (input.value.match(lista[4])) {
+      
+            alert("Benvenuta Maria ti stavamo aspettando");
+        
+            document.form1.text1.focus();
+        
+            return true;
+        
+        }
+         else {
       
           alert("Purtroppo, non hai i requisiti giusti per entrare");
       
