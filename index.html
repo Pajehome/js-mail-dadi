@@ -5,9 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/email.css">
     <title>Document</title>
 </head>
 <body>
+    
+    <div onload="document.form1.text1.focus()">
+    
+        <div class="mail">
+    
+          <h2>Input an email address</h2>
+    
+          <form name="form1" action="#">
+    
+            <ul>
+    
+              <li><input type="text" name="text1" /></li>
+    
+              <li>&nbsp;</li>
+    
+              <li class="validate">
+    
+                <input
+    
+                  type="submit"
+    
+                  name="validate"
+    
+                  value="Validate"
+    
+                  onclick="ValidateEmail(document.form1.text1)"
+    
+                />
+    
+              </li>
+    
+              <li>&nbsp;</li>
+    
+            </ul>
+    
+          </form>
+    
+        </div>
+    </div>
     <h1></h1>
     <div>
       <span class="num1"></span>
@@ -18,7 +58,7 @@
 
 
 
-    
+
     <script type="text/javascript" src="main.js" charset="utf-8"></script>
-</body>
+</div>
 </html>

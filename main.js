@@ -1,40 +1,63 @@
  const lista = ["pio@gmail.com", "pippo@gmail.com", "zio@gmail.com", "zia@gmail.com", "maria@gmail.com"]
- let email = prompt("Inserisci email");
+//  let email = prompt("Inserisci email");
 
 
 
  for  (let i=0; i < lista.length; i++) {
-    let  output = "Ti stavamo aspettando"
+    // let  output = "Ti stavamo aspettando"
 
-    if (email === lista[0]) {
-        output += " " + "Pio benvenuto!" 
-        console.log(output);
-        break
-    }
-    else if(email === lista[1]) {
-        output += " " + "Pippo benvenuto!" 
-        console.log(output);
-        break
-    }
-    else if(email === lista[2]) {
-        output += " " + "Zio benvenuto!" 
-        console.log(output);
-        break
-    }
-    else if(email === lista[3]) {
-        output += " " + "Zia benvenuto!" 
-        console.log(output);
-        break
-    }
-    else if(email === lista[4]) {
-        output += " " + "Maria benvenuto!" 
-        console.log(output);
-        break
-    }
-    else{
-        console.log("Mi dispiace, non puoi entrare");
-        break
-    }
+    function ValidateEmail(input) {
+
+      
+        if (input.value.match(lista[0])) {
+      
+          alert("Benvenuto Pio ti stavamo aspettando");
+      
+          document.form1.text1.focus();
+      
+          return true;
+      
+        } else {
+      
+          alert("Purtroppo, non hai i requisiti giusti per entrare");
+      
+          document.form1.text1.focus();
+      
+          return false;
+      
+        }
+      
+      }
+
+    // if (email === lista[0]) {
+    //     output += " " + "Pio benvenuto!" 
+    //     console.log(output);
+    //     break
+    // }
+    // else if(email === lista[1]) {
+    //     output += " " + "Pippo benvenuto!" 
+    //     console.log(output);
+    //     break
+    // }
+    // else if(email === lista[2]) {
+    //     output += " " + "Zio benvenuto!" 
+    //     console.log(output);
+    //     break
+    // }
+    // else if(email === lista[3]) {
+    //     output += " " + "Zia benvenuto!" 
+    //     console.log(output);
+    //     break
+    // }
+    // else if(email === lista[4]) {
+    //     output += " " + "Maria benvenuto!" 
+    //     console.log(output);
+    //     break
+    // }
+    // else{
+    //     console.log("Mi dispiace, non puoi entrare");
+    //     break
+    // }
  } 
 
 //Gioco dadi
@@ -61,5 +84,7 @@ let output = "";
     document.querySelector(".num2").innerHTML = randomNum2;
  }
 
+
+ 
 
 
