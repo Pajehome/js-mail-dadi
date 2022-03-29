@@ -4,16 +4,37 @@
 
 
  for  (let i=0; i < lista.length; i++) {
-     let output = "";
+    let  output = "Ti stavamo aspettando"
 
-     if (email === lista[i]) {
-         output += "entra";
-       console.log(output);
-     }
-      else{
-        output += "non puoi entrare";
+    if (email === lista[0]) {
+        output += " " + "Pio benvenuto!" 
         console.log(output);
-     }
+        break
+    }
+    else if(email === lista[1]) {
+        output += " " + "Pippo benvenuto!" 
+        console.log(output);
+        break
+    }
+    else if(email === lista[2]) {
+        output += " " + "Zio benvenuto!" 
+        console.log(output);
+        break
+    }
+    else if(email === lista[3]) {
+        output += " " + "Zia benvenuto!" 
+        console.log(output);
+        break
+    }
+    else if(email === lista[4]) {
+        output += " " + "Maria benvenuto!" 
+        console.log(output);
+        break
+    }
+    else{
+        console.log("Mi dispiace, non puoi entrare");
+        break
+    }
  } 
 
 //Gioco dadi
